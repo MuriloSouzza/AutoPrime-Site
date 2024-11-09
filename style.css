@@ -1,0 +1,420 @@
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    min-height: 100vh;
+    scrollbar-width: none; 
+}
+
+#background-video {
+    position: absolute; /* Para ficar atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%; /* O vídeo ocupa toda a largura */
+    height: 200px; /* O vídeo ocupa toda a altura */
+    object-fit: cover; /* Garante que o vídeo cubra a tela inteira */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+.content {
+    position: relative; /* Necessário para o conteúdo ficar na frente do vídeo */
+    z-index: 1; /* Garante que o conteúdo fique na frente do vídeo */
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+section div.background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+}
+
+section div.background-video video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.navbar ul {
+    width: 100px;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 5px 15px;
+}
+
+.navbar a {
+    font-family: "Red Hat Text", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: 0.5s;
+    color: #fff;
+  
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    padding: 4px;
+    color: white;
+}
+
+
+section .box {
+    width: 50%;
+    position: relative;
+    top: 24%;
+    left: 25%;
+    font-family: "Red Hat Text", sans-serif;
+    color: white;
+    font-size: 35px;
+    z-index: 1;
+}
+
+span {
+    color: blue;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+#btn-inicio {
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: #0d0da3;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#btn-inicio:hover {
+    cursor: pointer;
+    background: #1515f0;
+    box-shadow: 0 0 5px #1515f0,
+                0 0 20px #1515f0,
+                0 0 60px #1515f0, 
+                0 0 150px #1515f0;
+}
+
+#btn2 {
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: #B60D1C;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#btn2:hover {
+    cursor: pointer;
+    background: #db0e1f;
+    box-shadow: 0 0 5px #db0e1f,
+                0 0 20px #db0e1f,
+                0 0 60px #db0e1f, 
+                0 0 150px #db0e1f;
+}
+
+.parallax {
+    position: relative;
+    height: 105vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#btn1 {
+    position: absolute;
+    top: 26%;
+    left: 12%;
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: #B60D1C;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#btn1:hover {
+    cursor: pointer;
+    background: #db0e1f;
+    box-shadow: 0 0 5px #db0e1f,
+                0 0 20px #db0e1f,
+                0 0 60px #db0e1f, 
+                0 0 150px #db0e1f;
+}
+
+#car1 {
+    background-image: url('imgs/ferrari458.jpeg'); 
+}
+
+
+.car-name1 {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.46);
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: bold;
+}
+
+#car2 {
+    background-image: url('imgs/aventador.jpeg'); 
+}
+
+.car-name2 {
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: bold;
+}
+
+#btn2 {
+    position: absolute;
+    top: 35%;
+    left: 14%;
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: #83684e;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#btn2:hover {
+    cursor: pointer;
+    background: #97785a;
+    box-shadow: 0 0 5px #97785a,
+                0 0 20px #97785a,
+                0 0 60px #97785a, 
+                0 0 150px #97785a   ;
+}
+
+
+
+#car3 {
+    background-image: url('imgs/bugattiw16.jpeg'); 
+}
+
+.car-name3 {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: bold;
+}
+
+#btn3 {
+    position: absolute;
+    top: 26%;
+    left: 13%;
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: #000000;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#btn3:hover {
+    cursor: pointer;
+    background: #363636;
+    box-shadow: 0 0 5px #363636,
+                0 0 20px #363636,
+                0 0 60px #363636, 
+                0 0 150px #363636;
+}
+
+
+#car4 {
+    background-image: url('imgs/mclaren.jpeg'); /* Substitua pelo link da imagem */
+}
+
+.car-name4 {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: bold;
+}
+
+#btn4 {
+    position: absolute;
+    top: 26%;
+    left: 12%;
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: #476A76;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#btn4:hover {
+    cursor: pointer;
+    background: #689aaa;
+    box-shadow: 0 0 5px #689aaa,
+                0 0 20px #689aaa,
+                0 0 60px #689aaa, 
+                0 0 150px #689aaa;
+}
+
+#car5 {
+    background-image: url('imgs/maserati.jpeg'); /* Substitua pelo link da imagem */
+}
+
+.car-name5 {
+    position: absolute;
+    top: 25%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: bold;
+}
+
+#btn5 {
+    position: absolute;
+    top: 31%;
+    left: 13%;
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: #29263C;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#btn5:hover {
+    cursor: pointer;
+    background: #4a456e;
+    box-shadow: 0 0 5px #4a456e,
+                0 0 20px #4a456e,
+                0 0 60px #4a456e, 
+                0 0 150px #4a456e;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    background-color: #f0f0f0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 300px;
+    padding: 15px;
+    border-radius: 3px;
+    margin-left: 30px;
+    border: solid 1px #f0f0f0;
+    box-shadow: 10px 10px 16px 8px rgba(0, 0, 0, 0.11);
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.about > h1 {
+    text-align: center;
+}
+
+.about > p {
+    margin-top: 40px;
+}
+
+.fabrica {
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.3);
+    
+}
+
+.fabrica img {
+    height: 80vh;
+    
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 14pt;
+}
