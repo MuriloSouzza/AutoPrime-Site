@@ -57,20 +57,16 @@ section div.background-video video {
     left: 0;
     width: 100%;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     z-index: 1;
 }
 
 .navbar ul {
-    width: 100px;
+    width: 50px;
     height: 40px;
     list-style: none;
     display: flex;
     justify-content: center;
-}
-
-.navbar li {
-    margin: 5px 15px;
 }
 
 .navbar a {
@@ -81,12 +77,10 @@ section div.background-video video {
     border-radius: 3px;
     transition: 0.5s;
     color: #fff;
-  
 }
 
 .navbar a:hover {
     text-decoration: underline;
-    padding: 4px;
     color: white;
 }
 
@@ -445,5 +439,69 @@ footer {
 
     .fabrica img {
         display: none;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+    .car-name1 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    #btn1 {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+    }
+
+    .car-name2 {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+    }
+
+    #btn2 {
+        position: absolute;
+        top: 49%;
+        left: 35%;
+    }
+
+    .car-name3 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    #btn3 {
+        position: absolute;
+        top: 55%;
+        left: 35%;
+    }
+
+    .car-name4 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    #btn4 {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+    }
+
+    .car-name5 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    #btn5 {
+        position: absolute;
+        top: 50%;
+        left: 35%;
     }
 }
